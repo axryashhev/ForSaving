@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Счетчик сбережений</string>
+    <string name="tab_text_1">Доходы</string>
+    <string name="tab_text_2">Расходы</string>
+    <string name="txtType">Тип:</string>
+    <string name="txtTitle">Наименование:</string>
+    <string name="txtDate">Дата:</string>
+    <string name="txtAmount">Сумма:</string>
+    <string name="txtDescription">Комментарии:</string>
+</resources>
