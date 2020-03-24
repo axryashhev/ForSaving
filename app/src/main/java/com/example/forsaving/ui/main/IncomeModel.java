@@ -1,8 +1,8 @@
-package com.example.forsaving;
+package com.example.forsaving.ui.main;
 
 import java.util.Date;
 
-public class CostsModel {
+public class IncomeModel {
 
     public static final CharSequence TYPE_MOTION = "Расходы";
 
@@ -13,17 +13,17 @@ public class CostsModel {
     private String description;
 
 
-    private CostsModel(String title, Date date, double amount, String description) {
+    private IncomeModel(String title, Date date, double amount, String description) {
         this.title = title;
         this.date = date;
         this.amount = amount;
         this.description = description;
     }
 
-    public static final CostsModel[] modelsCosts = {
-            new CostsModel("Оплата за квартиру", new Date(), 565.34, "Незадалось!" ),
-            new CostsModel("Оплата за офис", new Date(), 456.75, "Налоги!" ),
-            new CostsModel("Обед", new Date(), 225.34, "Хороший выбор!" )
+    public static final IncomeModel[] modelsCosts = {
+            new IncomeModel("Оплата за квартиру", new Date(), 565.34, "Незадалось!" ),
+            new IncomeModel("Оплата за офис", new Date(), 456.75, "Налоги!" ),
+            new IncomeModel("Обед", new Date(), 225.34, "Хороший выбор!" )
     };
 
     public String getTitle() {

@@ -17,16 +17,19 @@ public class CostsActivity extends AppCompatActivity {
         int costsId = (Integer)getIntent().getExtras().get(EXTRA_COSTS);
         CostsModel costsModel = CostsModel.modelsCosts[costsId];
 
+        TextView type = (TextView) findViewById(R.id.textType);
+        type.setText(CostsModel.TYPE_MOTION);
+
         TextView title = (TextView) findViewById(R.id.textTitle);
         title.setText(costsModel.getTitle());
 
         TextView date = (TextView) findViewById(R.id.textDate);
-        title.setText(costsModel.getDate().toString());
+        date.setText(costsModel.getDate().toString());
 
         TextView amount = (TextView) findViewById(R.id.textAmount);
-        title.setText(String.valueOf(amount));
+        amount.setText(String.valueOf(costsModel.getAmount()));
 
         TextView description = (TextView) findViewById(R.id.textDescription);
-        title.setText(costsModel.getDescription());
+        description.setText(costsModel.getDescription());
     }
 }
